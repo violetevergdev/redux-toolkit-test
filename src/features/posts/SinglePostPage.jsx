@@ -7,7 +7,7 @@ export const SinglePostPage = ({ match }) => {
   const post = useSelector((state) =>
     state.posts.find((post) => post.id === postID)
   );
-
+  // React Router передаст в качестве параметра объект match, содержащий искомую информацию об URL
   if (!post) {
     return (
       <section>

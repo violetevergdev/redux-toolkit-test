@@ -1,3 +1,5 @@
+/** @format */
+
 import { useSelector } from "react-redux";
 
 export const PostsList = () => {
@@ -9,7 +11,7 @@ export const PostsList = () => {
       <p className="post-content">{post.content.substring(0, 100)}</p>
     </article>
   ));
-  console.log(posts);
+
   return (
     <section className="posts-list">
       <h2>Posts</h2>
